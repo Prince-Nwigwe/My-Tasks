@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>My Calculator</title>
+</head>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.0/math.min.js"></script> -->
+<body>
+    <div id="show">
+        <div class="balance">
+        <input type="text" class="display" id="in">
+        <!-- <input type="text" class="display" id="result"> -->
+        </div>  
+        <input type="text" name="" id="out">
+        <div class="grid">
+            <button class="button operator" id="del">Del</button>
+            <button class="button operator" id="clear">AC</button>
+            <button class="button operator" id="ans">ANS</button> 
+            <button class="button operator" onclick="document.getElementById('in').value+='÷'; document.getElementById('out').value+='/'">÷</button>
+
+            <button class="button" onclick="document.getElementById('in').value+='9'; document.getElementById('out').value+='9'">9</button>
+            <button class="button" onclick="document.getElementById('in').value+='8'; document.getElementById('out').value+='8'">8</button>
+            <button class="button" onclick="document.getElementById('in').value+='7'; document.getElementById('out').value+='7'">7</button>
+            <button class="button operator" onclick="document.getElementById('in').value+='×'; document.getElementById('out').value+='*'">×</button>
+            
+            <button class="button" onclick="document.getElementById('in').value+='6'; document.getElementById('out').value+='6'">6</button>
+            <button class="button" onclick="document.getElementById('in').value+='5'; document.getElementById('out').value+='5'">5</button>
+            <button class="button" onclick="document.getElementById('in').value+='4'; document.getElementById('out').value+='4'">4</button>
+            <button class="button operator" onclick="document.getElementById('in').value+='-'; document.getElementById('out').value+='-'">-</button>
+
+            <button class="button" onclick="document.getElementById('in').value+='3'; document.getElementById('out').value+='3'">3</button>
+            <button class="button" onclick="document.getElementById('in').value+='2'; document.getElementById('out').value+='2'">2</button>
+            <button class="button" onclick="document.getElementById('in').value+='1'; document.getElementById('out').value+='1'">1</button>
+            <button class="button operator" onclick="document.getElementById('in').value+='+'; document.getElementById('out').value+='+'">+</button><br>
+
+            <button class="button" onclick="document.getElementById('in').value+='0'; document.getElementById('out').value+='0'">0</button><br><br><br>
+
+            <button class="button operator" onclick="document.getElementById('in').value+='^'; document.getElementById('out').value+='**'">^</button>
+            <button id="sin" class="button operator">sin</button>
+            <button id="cos" class="button operator">cos</button>
+            <button id="tan" class="button operator">tan</button>
+            
+            
+            
+            <button id="eval" class="button operator">=</button>
+            <button class="button operator" onclick="document.getElementById('in').value+='('; document.getElementById('out').value+='('">(</button>
+            <button class="button operator" onclick="document.getElementById('in').value+=')'; document.getElementById('out').value+=')'">)</button>
+            <button class="button operator" onclick="document.getElementById('in').value+='.'; document.getElementById('out').value+='.'">.</button>
+            
+            
+            
+        </div>
+    </div>
+    <script src="calculator.js">
+        
+    </script>
+</body>
+</html>
